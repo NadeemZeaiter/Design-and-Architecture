@@ -1,5 +1,4 @@
 ﻿using Cmps253.Logger.Core;
-using System;
 using System.IO;
 
 namespace Cmps253.Logger.Loggers
@@ -11,9 +10,9 @@ namespace Cmps253.Logger.Loggers
         {
             this.file = file;
         }
-        public override void Log(string msg)
+        public override void ConcreteLog(string msg)
         {
-            File.AppendAllText(file, (msg));
+            File.AppendAllText(file, msg);
         }
     }
 }

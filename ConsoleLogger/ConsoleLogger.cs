@@ -5,9 +5,9 @@ namespace Cmps253.Logger.Loggers
 {
     public class ConsoleLogger : BaseLogger
     {
-        public override void Log(string msg)
+        public override void ConcreteLog(string msg)
         {
-            Console.WriteLine(base.FormatMessage(msg));
+            Console.WriteLine(msg);
         }
     }
 }
